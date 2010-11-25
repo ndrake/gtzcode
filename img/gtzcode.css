@@ -1,0 +1,230 @@
+/* icon menus */
+.icon-gtzcode16 {
+  list-style-image: url("chrome://gtzcode/skin/gtzcode_16x16.png");}
+
+.icon-gtzcodepreference {
+  list-style-image: url("chrome://gtzcode/skin/gtzcode_preference.png");}
+
+.icon-gtzcodedisabilita {
+  list-style-image: url("chrome://gtzcode/skin/gtzcode_disabilita.png");}
+
+.icon-gtzcodecolore {
+  list-style-image: url("chrome://gtzcode/skin/gtzcode_color.png");}
+
+.gtzcodecolorerosso {
+  list-style-image: url("chrome://gtzcode/skin/gtzcode_color.png");}
+
+.icon-gtzcodesmile {
+  list-style-image: url("chrome://gtzcode/skin/smiley.gif");}
+
+.icon-gtzcodefrown {
+  list-style-image: url("chrome://gtzcode/skin/smiley_f.gif");}
+
+.icon-gtzcodewink {
+  list-style-image: url("chrome://gtzcode/skin/smiley_w.gif");}
+
+.icon-gtzcodepoker {
+  list-style-image: url("chrome://gtzcode/skin/smiley_p.gif");}
+
+.icon-gtzcoderasp {
+  list-style-image: url("chrome://gtzcode/skin/smiley_t.gif");}
+
+.icon-gtzcodewinkrasp {
+  list-style-image: url("chrome://gtzcode/skin/smiley_wt.gif");}
+
+.icon-gtzcodesuprise {
+  list-style-image: url("chrome://gtzcode/skin/smiley_s.gif");}
+
+.icon-gtzcodecool {
+  list-style-image: url("chrome://gtzcode/skin/smiley_g.gif");}
+
+.icon-gtzcodecoolgrin {
+  list-style-image: url("chrome://gtzcode/skin/smiley_gd.gif");}
+
+.icon-gtzcodegrin {
+  list-style-image: url("chrome://gtzcode/skin/smiley_d.gif");}
+
+.icon-gtzcodeenvy {
+  list-style-image: url("chrome://gtzcode/skin/smiley_j.gif");}
+
+.icon-gtzcodewince {
+  list-style-image: url("chrome://gtzcode/skin/smiley_wnc.gif");}
+
+.icon-gtzcodeyawn {
+  list-style-image: url("chrome://gtzcode/skin/smiley_y.gif");}
+
+.icon-gtzcodeshock {
+  list-style-image: url("chrome://gtzcode/skin/smiley_ss.gif");}
+
+.icon-gtzcodewry {
+  list-style-image: url("chrome://gtzcode/skin/smiley_wr.gif");}
+
+.icon-gtzcodeangry {
+  list-style-image: url("chrome://gtzcode/skin/smiley_a.gif");}
+
+.icon-gtzcodeevil {
+  list-style-image: url("chrome://gtzcode/skin/smiley_e.gif");}
+
+.icon-gtzcodedead {
+  list-style-image: url("chrome://gtzcode/skin/smiley_x.gif");}
+
+.icon-gtzcoderoll {
+  list-style-image: url("chrome://gtzcode/skin/smiley_rl.gif");}
+
+.icon-gtzcodelol {
+  list-style-image: url("chrome://gtzcode/skin/lol.gif");}
+
+.icon-gtzcodehuh {
+  list-style-image: url("chrome://gtzcode/skin/huh.gif");}
+
+.icon-gtzcodeduh {
+  list-style-image: url("chrome://gtzcode/skin/duh.gif");}
+
+.icon-gtzcodepp {
+  list-style-image: url("chrome://gtzcode/skin/pp.gif");}
+
+.icon-gtzcodestar {
+  list-style-image: url("chrome://gtzcode/skin/star.gif");}
+
+.icon-gtzcodebstar {
+  list-style-image: url("chrome://gtzcode/skin/bstar.gif");}
+
+.icon-gtzcodesstar {
+  list-style-image: url("chrome://gtzcode/skin/sstar.gif");}
+
+.icon-gtzcode2star {
+  list-style-image: url("chrome://gtzcode/skin/2g-star.gif");}
+
+.icon-gtzcode3star {
+  list-style-image: url("chrome://gtzcode/skin/3g-star.gif");}
+
+.icon-gtzcode4star {
+  list-style-image: url("chrome://gtzcode/skin/4g-star.gif");}
+
+.icon-gtzcode5star {
+  list-style-image: url("chrome://gtzcode/skin/5g-star.gif");}
+
+.icon-gtzcodeglobe {
+  list-style-image: url("chrome://gtzcode/skin/globe.gif");}
+
+.icon-gtzcodegglobe {
+  list-style-image: url("chrome://gtzcode/skin/g-globe.gif");}
+
+.icon-gtzcodenew {
+  list-style-image: url("chrome://gtzcode/skin/new.gif");}
+
+.icon-gtzcodechatting {
+  list-style-image: url("chrome://gtzcode/skin/chatting.gif");}
+
+.icon-gtzcodematch {
+  list-style-image: url("chrome://gtzcode/skin/match.gif");}
+
+.icon-gtzcodeshake {
+  list-style-image: url("chrome://gtzcode/skin/shake.gif");}
+
+.icon-gtzcodecheck {
+  list-style-image: url("chrome://gtzcode/skin/check.gif");}
+
+.icon-gtzcodeuncheck {
+  list-style-image: url("chrome://gtzcode/skin/uncheck.gif");}
+
+.icon-gtzcodeidea {
+  list-style-image: url("chrome://gtzcode/skin/bulb.gif");}
+
+.icon-gtzcodeyes {
+  list-style-image: url("chrome://gtzcode/skin/thumbsup.gif");}
+
+.icon-gtzcodeno {
+  list-style-image: url("chrome://gtzcode/skin/thumbsdown.gif");}
+
+.icon-gtzcodeexc {
+  list-style-image: url("chrome://gtzcode/skin/exclamation.gif");}
+
+.icon-gtzcodeques {
+  list-style-image: url("chrome://gtzcode/skin/question.gif");}
+
+.icon-gtzcodewarning {
+  list-style-image: url("chrome://gtzcode/skin/warning.gif");}
+
+.icon-gtzcodemail {
+  list-style-image: url("chrome://gtzcode/skin/mail.gif");}
+
+.icon-gtzcodeheart {
+  list-style-image: url("chrome://gtzcode/skin/heart.gif");}
+
+.icon-gtzcodebheart {
+  list-style-image: url("chrome://gtzcode/skin/br-heart.gif");}
+
+.icon-gtzcodenes {
+  list-style-image: url("chrome://gtzcode/skin/nes.png");}
+
+.icon-gtzcodesnes {
+  list-style-image: url("chrome://gtzcode/skin/snes.png");}
+
+.icon-gtzcoden64 {
+  list-style-image: url("chrome://gtzcode/skin/n64.png");}
+
+.icon-gtzcodegba {
+  list-style-image: url("chrome://gtzcode/skin/gba.png");}
+  
+.icon-gtzcodegc {
+  list-style-image: url("chrome://gtzcode/skin/gc.png");}
+
+.icon-gtzcodeds {
+  list-style-image: url("chrome://gtzcode/skin/ds.png");}
+
+.icon-gtzcodewii {
+  list-style-image: url("chrome://gtzcode/skin/wii.png");}
+
+.icon-gtzcodeps1 {
+  list-style-image: url("chrome://gtzcode/skin/ps1.png");}
+
+.icon-gtzcodeps2 {
+  list-style-image: url("chrome://gtzcode/skin/ps2.png");}
+
+.icon-gtzcodeps3 {
+  list-style-image: url("chrome://gtzcode/skin/ps3.png");}
+
+.icon-gtzcodepsp {
+  list-style-image: url("chrome://gtzcode/skin/psp.png");}
+
+.icon-gtzcodexbox {
+  list-style-image: url("chrome://gtzcode/skin/xbox.png");}
+
+.icon-gtzcode360 {
+  list-style-image: url("chrome://gtzcode/skin/360.png");}
+
+.icon-gtzcodepc {
+  list-style-image: url("chrome://gtzcode/skin/pc.png");}
+
+.icon-gtzcodegenesis {
+  list-style-image: url("chrome://gtzcode/skin/genesis.png");}
+
+.icon-gtzcodesaturn {
+  list-style-image: url("chrome://gtzcode/skin/saturn.png");}
+
+.icon-gtzcodedc {
+  list-style-image: url("chrome://gtzcode/skin/dc.png");}
+
+.icon-gtzcodedvd {
+  list-style-image: url("chrome://gtzcode/skin/dvd.png");}
+
+.icon-gtzcodebluray {
+  list-style-image: url("chrome://gtzcode/skin/bluray.png");}
+
+.icon-gtzcodehddvd {
+  list-style-image: url("chrome://gtzcode/skin/hddvd.png");}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
