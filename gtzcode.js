@@ -30,15 +30,55 @@ var contexts = ["page","selection","link","editable","image","video",
 // Kind of a hack because I don't know a better way to get the item data in gtzCodeInsert()        
 var gtzcItems = {};                
 
-for (var i = 0; i < items.length; i++) {
-    //alert(items[i].name);
-    var item = items[i];
+var emoticonMenuId = chrome.contextMenus.create({"title":"Emoticons", "contexts":['editable'], "documentUrlPatterns":["*://*.gametz.com/*"]});
+var smileyMenuId = chrome.contextMenus.create({"title":"Smileys", "contexts":['editable'], "parentId":emoticonMenuId, "documentUrlPatterns":["*://*.gametz.com/*"]});
+var consoleMenuId = chrome.contextMenus.create({"title":"Console", "contexts":['editable'], "parentId":emoticonMenuId, "documentUrlPatterns":["*://*.gametz.com/*"]});
+
+var gtzMenuId = chrome.contextMenus.create({"title":"GTZ", "contexts":['editable'], "documentUrlPatterns":["*://*.gametz.com/*"]});
+
+
+// smileys menu
+for (var i = 0; i < smileyItems.length; i++) {
+    var item = smileyItems[i];
     var title = item.name;
     var id = chrome.contextMenus.create({"title": title, "contexts":['editable'],
                                         "onclick": gtzCodeInsert,
+                                        "parentId": smileyMenuId, 
                                         "documentUrlPatterns":["*://*.gametz.com/*"]});
     gtzcItems[id] = item;                                        
-    //console.log("'" + contexts + "' item:" + id);
 }
 
+// console menu
+for (var i = 0; i < consoleItems.length; i++) {
+    var item = consoleItems[i];
+    var title = item.name;
+    var id = chrome.contextMenus.create({"title": title, "contexts":['editable'],
+                                        "onclick": gtzCodeInsert,
+                                        "parentId": consoleMenuId, 
+                                        "documentUrlPatterns":["*://*.gametz.com/*"]});
+    gtzcItems[id] = item;                                        
+}
+
+
+// other emoticons
+for (var i = 0; i < iconItems.length; i++) {
+    var item = iconItems[i];
+    var title = item.name;
+    var id = chrome.contextMenus.create({"title": title, "contexts":['editable'],
+                                        "onclick": gtzCodeInsert,
+                                        "parentId": emoticonMenuId, 
+                                        "documentUrlPatterns":["*://*.gametz.com/*"]});
+    gtzcItems[id] = item;                                        
+}
+
+// gtz tags menu
+for (var i = 0; i < gtzItems.length; i++) {
+    var item = gtzItems[i];
+    var title = item.name;
+    var id = chrome.contextMenus.create({"title": title, "contexts":['editable'],
+                                        "onclick": gtzCodeInsert,
+                                        "parentId": gtzMenuId, 
+                                        "documentUrlPatterns":["*://*.gametz.com/*"]});
+    gtzcItems[id] = item;                                        
+}
 

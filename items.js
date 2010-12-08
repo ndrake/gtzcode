@@ -1,6 +1,6 @@
 
 
-var items = [
+var smileyItems = [
     {
         "name" : "smiley",
         "text" : ":-)",
@@ -95,7 +95,10 @@ var items = [
         "name" : "roll eyes",
         "text" : "*roll*",
         "icon" : "img/smiley_rl.gif"
-    },
+    }
+];
+    
+var iconItems = [
     {
         "name" : "lol",
         "text" : "*lol*",
@@ -235,7 +238,10 @@ var items = [
         "name" : "</3",
         "text" : "</3",
         "icon" : "img/br-heart.gif"
-    },
+    }
+];
+
+var consoleItems = [
     {
         "name" : "nes",
         "text" : "*nes*",
@@ -336,4 +342,45 @@ var items = [
         "text" : "*hddvd*",
         "icon" : "img/hddvd.gif"
     }    
+
+];
+
+var gtzItems = [
+    {
+        "name" : "Game",
+        "text" : "{game}{game}"
+    },
+    {
+        "name" : "Movie",
+        "text" : "{movie}{movie}"
+    },
+    {
+        "name" : "Music",
+        "text" : "{music}{music}"
+    },
+    {
+        "name" : "Book",
+        "text" : "{book}{book}"
+    },
+    {
+        "name" : "Tracking",
+        "text" : "{tracking}{tracking}"
+    },
+    {
+        "name" : "Box",
+        "text" : "{box}{box}"
+    },
+    {
+        "name" : "Spoiler",
+        "text" : "{spoiler}{spoiler}"
+    },
+    {
+        "name" : "NSFW",
+        "text" : "{nsfw}{nsfw}"
+    },
+    {
+        "name" : "Wikipedia",
+        "text" : "[[]]"
+    },
+    
 ];
