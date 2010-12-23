@@ -1,6 +1,6 @@
 {
     "name": "GTZCode",
-    "version": "0.4",
+    "version": "0.5",
     "description": "GTZCode for Google Chrome.",
     "browser_action": {
         "default_icon": "img/gtzcode_16x16.png"
