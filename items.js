@@ -382,5 +382,46 @@ var gtzItems = [
         "name" : "Wikipedia",
         "text" : "[[]]"
     },
-    
+    {
+        "name" : "Private",
+        "text" : "{private}{private}"
+    }    
+];
+
+
+var extraItems = [
+    {
+        "name" : "Code",
+        "text" : "[code][/code]",
+    },
+    {
+        "name" : "List",
+        "text" : "[list]\n [*]\n[/list]",
+    },
+    {
+        "name" : "Ordered List",
+        "text" : "[list=1]\n [*]\n[/list]",
+    },
+    {
+        "name" : "Alphabetic List",
+        "text" : "[list=a]\n [*]\n[/list]",
+    },
+    // TODO: Font Size: [size=33][/size]
+    // TODO: Color picker: [color=#FF0000]red![/color]
+    {
+        "name" : "Align Right",
+        "text" : "[align=right][/align]",
+    },
+    {
+        "name" : "Align Left",
+        "text" : "[align=left][/align]",
+    },
+    {
+        "name" : "Center",
+        "text" : "[align=center][/align]",
+    },
+    {
+        "name" : "Justify",
+        "text" : "[align=justify][/align]",
+    },       
 ];
