@@ -1,9 +1,13 @@
 {
     "name": "GTZCode",
-    "version": "0.5",
+    "version": "0.6",
     "description": "GTZCode for Google Chrome.",
     "browser_action": {
-        "default_icon": "img/gtzcode_16x16.png"
+        "default_icon": "img/gtzcode_16x16.png",
+        "default_title": "GTZCode",
+        "popup": {
+           "path": "popup.html"
+        }
     },
     "background_page": "background.html",
     "icons": {
@@ -18,6 +22,8 @@
     "permissions": [
 		"tabs",
         "contextMenus",
-        "http://*.gametz.com/*"
-    ]
+        "http://*.gametz.com/*",
+        "http://*/*", "https://*/*"
+    ],
+    "options_page": "options.html"    
 }
