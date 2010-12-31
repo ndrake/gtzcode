@@ -16,7 +16,7 @@
     "content_scripts": [
       {
         "matches": ["*://*.gametz.com/*"],
-        "js": ["page.js"]
+        "js": ["js/page.js"]
       }
     ],    
     "permissions": [
