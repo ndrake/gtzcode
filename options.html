@@ -1,12 +1,11 @@
 <html>
 <head>    
     <title>Options GTZCode</title>
-    
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>        
     <script type="text/javascript" src="js/options.js"></script>
-    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>    
     
 </head>
-<body>
+<body onload="restoreOptions()">
 
 <div id="main" style="text-align:center;">
 
@@ -17,10 +16,13 @@
     <form>
         <table>
             <tr>
-                <td><input type="checkbox" id="show_notification" <label for="show_notification"><strong>Show desktop notifications</strong></label></td>
+                <td><input type="checkbox" id="gtz_show_notifications" <label for="gtz_show_notifications"><strong>Show desktop notifications</strong></label></td>
             </tr>                
             <tr>
-                <td><input type="checkbox" id="check_for_messages" <label for="check_for_messages"><strong>Check for new PMs and Offers</strong></label></td>
+                <td><input type="checkbox" id="gtz_check_messages" <label for="gtz_check_messages"><strong>Check for new PMs and Offers</strong></label></td>
+            </tr>
+            <tr>
+                <td><button onclick="saveOptions()" style="width: 130px;height: 30px; float: right; margin-top: 4px;">Save</button></td>                
             </tr>
         </table>
     </form>    

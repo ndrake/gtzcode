@@ -2,8 +2,38 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// A generic onclick callback function.
 
+function init() {
+    
+    loadSettings();
+    
+}
+
+function loadSettings() {
+    
+    if (localStorage["gtz_show_notifications"] == null ||
+        localStorage["gtz_show_notifications"] == "") 
+    {
+        localStorage["gtz_show_notifications"] = "true";
+    }
+    
+    if (localStorage["gtz_check_messages"] == null ||
+        localStorage["gtz_check_messages"] == "") 
+    {
+        localStorage["gtz_check_messages"] = "true";
+    }
+    
+    if (localStorage["gtz_version"] == null ||
+        localStorage["gtz_version"] != "0.6") 
+    {
+        localStorage["gtz_version"] = "0.6";
+        // New version installed, open about.html in new tab
+        chrome.tabs.create({ url: "about.html" });
+    }
+    
+    
+}
+// A generic onclick callback function.
 function gtzCodeInsert(i, el) {
     chrome.tabs.getSelected(null, function(tab) {
         //console.log('selected tab: ' + tab);
