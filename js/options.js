@@ -7,7 +7,12 @@ function saveOptions() {
     localStorage['gtz_check_messages'] = document.getElementById('gtz_check_messages').checked;        
     
     var backgroundPage = chrome.extension.getBackgroundPage();
-    backgroundPage.init();
+    backgroundPage.loadSettings();
+    
+    if(!document.getElementById('gtz_check_messages').checked) {
+        console.log("check messages was turned off, canceling interval");
+        backgroundPage.clearTimer();
+    }
 }
 
 function restoreOptions() {

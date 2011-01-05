@@ -23,7 +23,8 @@
 		"tabs",
         "contextMenus",
         "http://*.gametz.com/*",
-        "http://*/*", "https://*/*"
+        "http://*/*", "https://*/*",
+        "notifications"
     ],
     "options_page": "options.html"    
 }
