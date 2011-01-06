@@ -85,6 +85,10 @@ function checkMessages() {
                     notificationText
                 );
                 notification.show();
+                setTimeout(function () {
+                     notification.cancel();
+                }, 10000);
+                
             }
         }
     });
