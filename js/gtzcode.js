@@ -7,14 +7,19 @@
 
 var globalTest = 23;
 var checkUrl = 'http://gametz.com/?A=Data';
-//var checkUrl = 'http://localhost:8080/data2';
+//var checkUrl = 'http://localhost:8080/data3';
 var checkInterval = null;
+
+var message;
+var loggedIn;
 
 function init() {
     
     loadSettings();
 
     setupContextMenu();
+    
+    checkMessages();
 }
 
 
@@ -39,12 +44,19 @@ function checkMessages() {
             console.log("pms: " + data.PMs);
             console.log("Offers: " + data.Offers);
             console.log("sub: " + data.sub);
-            // if($(data).find("img[alt='You have New Messages!']").length >0 ) {
-            //     console.log('found!!!!!');
-            // } else console.log('not found');
-            // 
+
             var badgeText = '';
             var notificationText = '';
+            
+            
+            if(data.user = 'guest') {
+                // not logged in
+                console.log("not logged in");
+                message = "<img src='img/icon_alert.gif'/> You are not logged in to GameTZ.  Unable to check for new PMs or offers.";
+                loggedIn = false;
+                chrome.browserAction.setBadgeText({text:'*'});                
+                return;
+            }
             
             if(data.PMs > 0) { // this is really only 0 or 1
                 badgeText += 'PM';
@@ -81,6 +93,14 @@ function clearTimer() {
     console.log("Stopping interval...");
     clearInterval(checkInterval);
     checkInterval = null;
+}
+
+function isLoggedIn() {
+    return loggedIn;
+}
+
+function getMessage() {
+    return message;
 }
 
 function loadSettings() {

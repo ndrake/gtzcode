@@ -1,12 +1,33 @@
 <html>
 <head>
     <title>GTZCode - popup</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="popup.css" />
+    
     <script type="text/javascript" src="js/gtzcode.js"></script>        
     <script type="text/javascript" src="js/popup.js"></script>
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>    
+
+    <script type="text/javascript">    
+    
+    $(document).ready(function() {
+        var backgroundPage = chrome.extension.getBackgroundPage();
+        
+        if(!backgroundPage.isLoggedIn()) {
+            $('#msg').html(backgroundPage.getMessage());
+        }
+        
+    });
+    </script>
     
 </head>
 <body>
+    gtzcode
+    <hr/>
     <a href="javascript:openAbout()">About</a>
+    <a href="http://www.gametz.com" target="_blank" title="Gmail.com">Visit GameTZ</a>    
+    <br/><br/>
+    <div id="msg"></div>
+    
 </body>
 </html>
