@@ -49,7 +49,7 @@ function checkMessages() {
             var notificationText = '';
             
             
-            if(data.user = 'guest') {
+            if(data.user == 'guest') {
                 // not logged in
                 console.log("not logged in");
                 message = "<img src='img/icon_alert.gif'/> You are not logged in to GameTZ.  Unable to check for new PMs or offers.";
