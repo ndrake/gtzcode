@@ -56,6 +56,9 @@ function checkMessages() {
                 loggedIn = false;
                 chrome.browserAction.setBadgeText({text:'*'});                
                 return;
+            } else {
+                loggedIn = true;
+                message = '';
             }
             
             if(data.PMs > 0) { // this is really only 0 or 1
