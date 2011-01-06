@@ -7,11 +7,14 @@
 
 var globalTest = 23;
 var checkUrl = 'http://gametz.com/?A=Data';
-//var checkUrl = 'http://localhost:8080/data3';
+//var checkUrl = 'http://localhost:8080/data';
 var checkInterval = null;
 
 var message;
 var loggedIn;
+
+var newPMs = false;
+var newOffers = false;
 
 function init() {
     
@@ -65,6 +68,9 @@ function checkMessages() {
                 badgeText += 'PM';
                 //chrome.browserAction.setBadgeText({text:''+data.PMs});
                 notificationText += 'You have new Private Messages. ';
+                newPMs = true;
+            } else {
+                newPMs = false;
             }
             
             if(data.Offers > 0) {
@@ -72,6 +78,9 @@ function checkMessages() {
                     badgeText += '/';
                 badgeText += data.Offers;
                 notificationText += 'You have ' + data.Offers + ' new offers';
+                newOffers = true;
+            } else {
+                newOffers = false;
             }
             
             chrome.browserAction.setBadgeText({text:badgeText});
@@ -108,6 +117,14 @@ function isLoggedIn() {
 
 function getMessage() {
     return message;
+}
+
+function haveMessages() {
+    return newPMs;
+}
+
+function haveOffers() {
+    return newOffers;
 }
 
 function loadSettings() {
