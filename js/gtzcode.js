@@ -1,7 +1,5 @@
 //
 // TODO:
-// o Add "Go to GTZ" link on popup page
-// o Subscriber check
 // o Add link to subscribe page on GTZ
 
 
