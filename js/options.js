@@ -12,6 +12,8 @@ function saveOptions() {
     if(!document.getElementById('gtz_check_messages').checked) {
         console.log("check messages was turned off, canceling interval");
         backgroundPage.clearTimer();
+    } else {
+        backgroundPage.checkMessages();
     }
 }
 

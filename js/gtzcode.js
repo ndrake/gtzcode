@@ -41,12 +41,12 @@ function checkMessages() {
         url: checkUrl,
         dataType:"json",
         success: function(data) {
-            console.log(data);
-            console.log("checking! " + data);
-            console.log("user: " + data.user);
-            console.log("pms: " + data.PMs);
-            console.log("Offers: " + data.Offers);
-            console.log("sub: " + data.sub);
+            //console.log(data);
+            //console.log("checking! " + data);
+            //console.log("user: " + data.user);
+            //console.log("pms: " + data.PMs);
+            //console.log("Offers: " + data.Offers);
+            //console.log("sub: " + data.sub);
 
             var badgeText = '';
             var notificationText = '';
@@ -56,8 +56,23 @@ function checkMessages() {
                 // not logged in
                 console.log("not logged in");
                 message = "<img src='img/icon_alert.gif'/> You are not logged in to GameTZ.  Unable to check for new PMs or offers.";
+                message += "<br/>Login to gametz.com then re-enable the 'Check for new PMs and Offers' option on the gtzcode ";
+                message += "<a href='javascript:openOptions()'>Options</a> page.";
+                
                 loggedIn = false;
-                chrome.browserAction.setBadgeText({text:'*'});                
+                chrome.browserAction.setBadgeText({text:'*'});    
+                
+                var notification = webkitNotifications.createNotification(
+                    'img/gtzcode_96.png', 
+                    'gtzcode', 
+                    'You are not logged in to gametz.com.  Message checking has been disabled.  Please login and re-enable message checking in the extension options'
+                );
+                notification.show();
+                
+                // Cancel timer and turn off check messages option
+                clearTimer();                
+                localStorage['gtz_check_messages'] = "false";
+                
                 return;
             } else {
                 loggedIn = true;
