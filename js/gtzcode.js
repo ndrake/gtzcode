@@ -156,9 +156,9 @@ function loadSettings() {
     }
     
     if (localStorage["gtz_version"] == null ||
-        localStorage["gtz_version"] != "0.6") 
+        localStorage["gtz_version"] != "0.7") 
     {
-        localStorage["gtz_version"] = "0.6";
+        localStorage["gtz_version"] = "0.7";
         // New version installed, open about.html in new tab
         chrome.tabs.create({ url: "about.html" });
     }
