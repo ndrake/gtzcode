@@ -36,3 +36,8 @@ function restoreOptions() {
      }
     
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('button').addEventListener('click', saveOptions);
+    restoreOptions();
+});

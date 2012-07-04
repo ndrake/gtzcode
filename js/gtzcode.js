@@ -54,8 +54,8 @@ function checkMessages() {
                 // not logged in
                 console.log("not logged in");
                 message = "<img src='img/icon_alert.gif'/> You are not logged in to GameTZ.  Unable to check for new PMs or offers.";
-                message += "<br/>Login to gametz.com then re-enable the 'Check for new PMs and Offers' option on the gtzcode ";
-                message += "<a href='javascript:openOptions()'>Options</a> page.";
+                message += "<br/>Login to gametz.com then re-enable the 'Check for new PMs and Offers' option on the gtzcode Options page";
+
                 
                 loggedIn = false;
                 chrome.browserAction.setBadgeText({text:'*'});    
@@ -169,7 +169,7 @@ function loadSettings() {
         if(checkInterval == null) {
             console.log("no checkInterval, starting one");
             //checkMessages();
-            checkInterval = setInterval("checkMessages()", 1000*60*10); // check every 10 minutes
+            checkInterval = setInterval(checkMessages, 1000*60*10); // check every 10 minutes
         } else {
             console.log('checkInterval is already scheduled, not doing anything');
         }
@@ -270,3 +270,7 @@ function setupContextMenu() {
     }
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    init();
+});

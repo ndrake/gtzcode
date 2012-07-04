@@ -388,6 +388,8 @@ var gtzItems = [
     }    
 ];
 
+// TODO: Font Size: [size=33][/size]
+// TODO: Color picker: [color=#FF0000]red![/color]
 
 var extraItems = [
     {
@@ -406,8 +408,6 @@ var extraItems = [
         "name" : "Alphabetic List",
         "text" : "[list=a]\n [*]\n[/list]",
     },
-    // TODO: Font Size: [size=33][/size]
-    // TODO: Color picker: [color=#FF0000]red![/color]
     {
         "name" : "Align Right",
         "text" : "[align=right][/align]",

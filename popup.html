@@ -6,37 +6,15 @@
     
     <script type="text/javascript" src="js/gtzcode.js"></script>        
     <script type="text/javascript" src="js/popup.js"></script>
-    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>    
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>    
 
-    <script type="text/javascript">    
-    
-    $(document).ready(function() {
-        var backgroundPage = chrome.extension.getBackgroundPage();
-        
-        if(!backgroundPage.isLoggedIn()) {
-            $('#msg').html(backgroundPage.getMessage());
-        }
-        
-        if(backgroundPage.haveMessages()) {
-            $('#pmIcon').html('<img src="img/new.gif" alt="New Private Messages"/>');
-        } else {
-            $('#pmIcon').html('');
-        }
-        
-        if(backgroundPage.haveOffers()) {
-            $('#oIcon').html('<img src="img/new.gif" alt="New Offers"/>');
-        } else {
-            $('#oIcon').html('');
-        }
-        
-    });
-    </script>
+
     
 </head>
 <body>
     gtzcode
     <hr/>
-    <a href="javascript:openAbout()">About</a>
+    <a id="aboutLink" href="#">About</a><br/>
     <a href="http://www.gametz.com" target="_blank" title="Gmail.com">Visit GameTZ</a><br/>
     <ul>
         <li><a href="http://gametz.com/PM.html" target="_blank" title="Private Message">Private Messages</a><span id="pmIcon"></span></li>

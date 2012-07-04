@@ -1,15 +1,14 @@
 {
     "name": "GTZCode",
     "version": "0.6",
+    "manifest_version": 2,    
     "description": "GTZCode for Google Chrome.",
     "browser_action": {
         "default_icon": "img/gtzcode_16x16.png",
         "default_title": "GTZCode",
-        "popup": {
-           "path": "popup.html"
-        }
+        "default_popup":  "popup.html"        
     },
-    "background_page": "background.html",
+    "background": {"page":"background.html"},
     "icons": {
         "16": "img/gtzcode_16x16.png",
         "128": "img/gtzcode_96.png"
@@ -27,5 +26,9 @@
         "http://*/*", "https://*/*",
         "notifications"
     ],
-    "options_page": "options.html"    
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        "img/gtzcode_96.png",
+        "img/icon_alert.gif"
+    ]        
 }
