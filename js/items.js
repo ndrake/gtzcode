@@ -238,80 +238,176 @@ var iconItems = [
         "name" : "</3",
         "text" : "</3",
         "icon" : "img/br-heart.gif"
-    }
+    },
+    {
+        "name" : "up",
+        "text" : "*up*",
+        "icon" : "img/up.png"
+    },    
+    {
+        "name" : "down",
+        "text" : "*down*",
+        "icon" : "img/down.png"
+    },    
+    {
+        "name" : "bacon",
+        "text" : "*bacon*",
+        "icon" : "img/bacon.png"
+    },    
+    {
+        "name" : "rss",
+        "text" : "*rss*",
+        "icon" : "img/rss.png"
+    },    
+    {
+        "name" : "freebie",
+        "text" : "*freebie*",
+        "icon" : "img/freebie.gif"
+    },    
+    {
+        "name" : "cake",
+        "text" : "*cake*",
+        "icon" : "img/cake.png"
+    },    
+    {
+        "name" : "+",
+        "text" : "*+*",
+        "icon" : "img/plus.png"
+    },    
+    {
+        "name" : "-",
+        "text" : "*-*",
+        "icon" : "img/minus.png"
+    },    
+    {
+        "name" : ".",
+        "text" : "*.*",
+        "icon" : "img/stay.png"
+    },    
+    {
+        "name" : "Q",
+        "text" : "*Q*",
+        "icon" : "img/Q.png"
+    },    
+    {
+        "name" : "gQ",
+        "text" : "*gQ*",
+        "icon" : "img/gQ.png"
+    },    
+    {
+        "name" : "note",
+        "text" : "*note*",
+        "icon" : "img/note.png"
+    },    
+    {
+        "name" : "idcard",
+        "text" : "*idcard*",
+        "icon" : "img/idcard.png"
+    },    
+    {
+        "name" : "gidcard",
+        "text" : "*gidcard*",
+        "icon" : "img/goldidcard.png"
+    } 
+    
 ];
 
 var consoleItems = [
     {
-        "name" : "nes",
-        "text" : "*nes*",
-        "icon" : "img/nes.gif"
+        "name" : "atari",
+        "text" : "*atari*",
+        "icon" : "img/atari.png"
     },
     {
         "name" : "snes",
         "text" : "*snes*",
-        "icon" : "img/snes.gif"
+        "icon" : "img/snes.png"
     },
     {
         "name" : "n64",
         "text" : "*n64*",
-        "icon" : "img/n64.gif"
+        "icon" : "img/n64.png"
     },
     {
         "name" : "gba",
         "text" : "*gba*",
-        "icon" : "img/gba.gif"
+        "icon" : "img/gba.png"
     },
     {
         "name" : "gc",
         "text" : "*gc*",
-        "icon" : "img/gc.gif"
+        "icon" : "img/gc.png"
     },
     {
         "name" : "ds",
         "text" : "*ds*",
-        "icon" : "img/ds.gif"
+        "icon" : "img/ds.png"
     },
+    {
+        "name" : "3DS",
+        "text" : "*3DS*",
+        "icon" : "img/3ds.png"
+    },        
     {
         "name" : "wii",
         "text" : "*wii*",
-        "icon" : "img/wii.gif"
+        "icon" : "img/wii.png"
     },
     {
         "name" : "ps1",
         "text" : "*ps1*",
-        "icon" : "img/ps1.gif"
+        "icon" : "img/ps1.png"
     },
     {
         "name" : "ps2",
         "text" : "*ps2*",
-        "icon" : "img/ps2.gif"
+        "icon" : "img/ps2.png"
     },
     {
         "name" : "ps3",
         "text" : "*ps3*",
-        "icon" : "img/ps3.gif"
+        "icon" : "img/ps3.png"
     },
     {
         "name" : "psp",
         "text" : "*psp*",
-        "icon" : "img/psp.gif"
+        "icon" : "img/psp.png"
     },
+    {
+        "name" : "psvita",
+        "text" : "*psvita*",
+        "icon" : "img/psvita.png"
+    },    
+    {
+        "name" : "psmove",
+        "text" : "*psmove*",
+        "icon" : "img/psmove.png"
+    },    
     {
         "name" : "xbox",
         "text" : "*xbox*",
-        "icon" : "img/xbox.gif"
+        "icon" : "img/xbox.png"
     },
     {
         "name" : "360",
         "text" : "*360*",
-        "icon" : "img/360.gif"
+        "icon" : "img/360.png"
     },
+    {
+        "name" : "kinect",
+        "text" : "*kinect*",
+        "icon" : "img/kinect.png"
+    },    
     {
         "name" : "pc",
         "text" : "*pc*",
-        "icon" : "img/pc.gif"
+        "icon" : "img/pc.png"
     },
+    {
+        "name" : "apple",
+        "text" : "*apple*",
+        "icon" : "img/apple.png"
+    },    
     {
         "name" : "genesis",
         "text" : "*genesis*",
@@ -341,7 +437,27 @@ var consoleItems = [
         "name" : "hddvd",
         "text" : "*hddvd*",
         "icon" : "img/hddvd.gif"
-    }    
+    },
+    {
+        "name" : "twitter",
+        "text" : "*tw*",
+        "icon" : "img/tw.png"
+    },
+    {
+        "name" : "facebook",
+        "text" : "*fb*",
+        "icon" : "img/fb.png"
+    },
+    {
+        "name" : "steam",
+        "text" : "*steam*",
+        "icon" : "img/steam.png"
+    },    
+    {
+        "name" : "amazon",
+        "text" : "*amazon*",
+        "icon" : "img/amazon.png"
+    }
 
 ];
 

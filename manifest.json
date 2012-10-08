@@ -1,6 +1,6 @@
 {
     "name": "GTZCode",
-    "version": "0.7",
+    "version": "0.8",
     "manifest_version": 2,    
     "description": "GTZCode for Google Chrome.",
     "browser_action": {

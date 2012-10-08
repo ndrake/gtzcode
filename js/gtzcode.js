@@ -156,9 +156,9 @@ function loadSettings() {
     }
     
     if (localStorage["gtz_version"] == null ||
-        localStorage["gtz_version"] != "0.7") 
+        localStorage["gtz_version"] != "0.8") 
     {
-        localStorage["gtz_version"] = "0.7";
+        localStorage["gtz_version"] = "0.8";
         // New version installed, open about.html in new tab
         chrome.tabs.create({ url: "about.html" });
     }
@@ -207,7 +207,7 @@ function setupContextMenu() {
     var extraMenuId = chrome.contextMenus.create({"title":"eXtra", "contexts":['editable'], "documentUrlPatterns":["*://*.gametz.com/*"]});
     var emoticonMenuId = chrome.contextMenus.create({"title":"Emoticons", "contexts":['editable'], "documentUrlPatterns":["*://*.gametz.com/*"]});
     var smileyMenuId = chrome.contextMenus.create({"title":"Smileys", "contexts":['editable'], "parentId":emoticonMenuId, "documentUrlPatterns":["*://*.gametz.com/*"]});
-    var consoleMenuId = chrome.contextMenus.create({"title":"Console", "contexts":['editable'], "parentId":emoticonMenuId, "documentUrlPatterns":["*://*.gametz.com/*"]});
+    var consoleMenuId = chrome.contextMenus.create({"title":"Platforms", "contexts":['editable'], "parentId":emoticonMenuId, "documentUrlPatterns":["*://*.gametz.com/*"]});
 
     var gtzMenuId = chrome.contextMenus.create({"title":"GTZ", "contexts":['editable'], "documentUrlPatterns":["*://*.gametz.com/*"]});
 
